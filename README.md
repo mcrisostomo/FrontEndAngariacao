@@ -1,1 +1,1 @@
-This is a archived project and it will not updated.
+This is an archived project and it will not updated.
