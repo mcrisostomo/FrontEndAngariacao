@@ -1,0 +1,78 @@
+﻿<div>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-left">
+        <form class="form-group adesao">
+            <fieldset><h3>Período Selecionado</h3></fieldset>
+            <div class="row">
+                <div class="col-md-8 col-xs-12 input-group">
+                    <input id="txtDataInicio" type="text" class="form-control" aria-describedby="basic-addon1">
+                    <span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-chevron-right"></i></span>
+                    <input id="txtDataFim" type="text" class="form-control" aria-describedby="basic-addon1">
+                </div>
+                <div class="col-md-4 col-xs-12 text-right">
+                    <button class="btn btn-corretor btn-block btn-sm" ng-click="filtrarData()"> FILTRAR </button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-left">
+        <form class="form-group adesao">
+            <fieldset><h3>Produtos Pré-Definidos</h3></fieldset>
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <button class="btn btn-corretor btn-block btn-sm" ng-click="ultimos7Dias()"> Últimos 7 dias </button>
+                    <button class="btn btn-corretor btn-block btn-sm" ng-click="ultimos30Dias()"> Últimos 30 dias </button>
+                    <button class="btn btn-corretor btn-block btn-sm" ng-click="ultimos90Dias()"> Últimos 90 dias </button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left">
+        <div id="container" class="adesao"></div>
+        <div class="adesao">
+            <div class="row">
+                <div class="col-md-3 col-xs-12 text-center info-grafico">
+                    <span>0</span>
+                    <h5>Vendas Confirmadas</h5>
+                </div>
+                <div class="col-md-3 col-xs-12 text-center info-grafico">
+                    <span>0</span>
+                    <h5>Emitidas</h5>
+                </div>
+                <div class="col-md-3 col-xs-12 text-center info-grafico">
+                    <span>R$ 0,00</span>
+                    <h5>Total Previsto</h5>
+                </div>
+                <div class="col-md-3 col-xs-12 text-center info-grafico">
+                    <span>R$ 0,00</span>
+                    <h5>Total Pago</h5>
+                </div>
+            </div>
+        </div>
+        <!--<form class="form-group adesao agendamento">
+            <fieldset><h3>Consultas Crivo X Vendas X Emitidas</h3></fieldset>
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    Gráfico
+                </div>
+                <div class="col-md-3 col-xs-12 text-center info-grafico">
+                    <span>0</span>
+                    <h5>Vendas Confirmadas</h5>
+                </div>
+                <div class="col-md-3 col-xs-12 text-center info-grafico">
+                    <span>0</span>
+                    <h5>Emitidas</h5>
+                </div>
+                <div class="col-md-3 col-xs-12 text-center info-grafico">
+                    <span>R$ 0,00</span>
+                    <h5>Total Previsto</h5>
+                </div>
+                <div class="col-md-3 col-xs-12 text-center info-grafico">
+                    <span>R$ 0,00</span>
+                    <h5>Total Pago</h5>
+                </div>
+            </div>
+        </form>-->
+    </div>
+</div>

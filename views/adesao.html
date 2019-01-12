@@ -1,0 +1,490 @@
+﻿<div>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left">
+        <form class=" form-group adesao">
+            <div class="form-horizontal">
+                <fieldset><h3>Dados do Proponente</h3></fieldset>
+                <div class="row">
+                    <div class="form-group">
+                        <label class="control-label col-sm-3 col-xs-12 " for="txtCPF">CPF</label>
+                        <div class="col-sm-8 col-xs-12 ">
+                            <div class="input-group">
+                                <input id="txtCPF" class="form-control txtcpf" type="text" />
+                                <div class="input-group-addon"><i class="fa fa-credit-card fa-fw"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-3 col-xs-12" for="txtNomeProponente">Nome do Proponente</label>
+                        <div class="col-sm-8 col-xs-12 ">
+                            <div class="input-group">
+                                <input id="txtNomeProponente" class="form-control" type="text" placeholder="Digite o Nome do Proponente" />
+                                <div class="input-group-addon"><i class="fa fa-user fa-fw"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-3 col-xs-12 " for="txtTelefone">Telefone Celular</label>
+                        <div class="col-sm-8 col-xs-12 ">
+                            <div class="input-group">
+                                <input id="txtTelefone" class="form-control txttelcelular" type="tel" />
+                                <div class="input-group-addon"><i class="fa fa-mobile-phone fa-fw"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-3 col-xs-12 " for="txtTelefone2">Telefone Residencial</label>
+                        <div class="col-sm-8 col-xs-12 ">
+                            <div class="input-group">
+                                <input id="txtTelefone2" class="form-control txttel8" type="tel" />
+                                <div class="input-group-addon"><i class="fa fa-phone fa-fw"></i></div>
+                            </div>
+                        </div>
+                    </div>                   
+                    <div class="form-group">
+                        <label class="control-label col-sm-3 col-xs-12 " for="ddlEstadoCivil">Estado Civil</label>
+                        <div class="col-sm-8 col-xs-12 ">
+                            <div class="input-group">
+                                <select id="ddlEstadoCivil" class="form-control">
+                                    <option value="0">Selecione...</option>
+                                </select>
+                                <div class="input-group-addon"><i class="fa fa-heart fa-fw"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-3 col-xs-12 " for="txtDataNasc">Data de Nascimento</label>
+                        <div class="col-sm-8 col-xs-12 ">
+                            <div class="input-group">
+                                <input id="txtDataNasc" class="form-control txtdatanasc" type="text" />
+                                <div class="input-group-addon"><i class="fa fa-star fa-fw"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-3 col-xs-12 " for="ddlSexo">Sexo</label>
+                        <div class="col-sm-8 col-xs-12 ">
+                            <div class="input-group">
+                                <select id="ddlSexo" class="form-control">
+                                    <option value="0">Selecione...</option>
+                                    <option value="1">Masculino</option>
+                                    <option value="2">Feminino</option>
+                                </select>
+                                <div class="input-group-addon"><i class="fa fa-venus-mars fa-fw"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-3 col-xs-12 " for="ddlPPE">Pessoa Politicamente Exposta</label>
+                        <div class="col-sm-8 col-xs-12 ">
+                            <div class="input-group">
+                                <select id="ddlPPE" class="form-control" ng-options="sno.name for sno in SN.dados track by sno.value" ng-model="venda.pessoaPoliticamenteExposta">
+                                    <option value="0">Selecione...</option>
+                                </select>
+                                <div class="input-group-addon"><i class="fa fa-dot-circle-o fa-fw"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-3 col-xs-12 " for="txtRendaAuferida">Renda Mensal Auferida</label>
+                        <div class="col-sm-8 col-xs-12 ">
+                            <div class="input-group">
+                                <input id="txtRendaAuferida" class="form-control" type="text" placeholder="Digite a Renda Mensal do Proponente" />
+                                <div class="input-group-addon"><i class="fa fa-dollar fa-fw"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-3 col-xs-12 " for="txtCodINSS">Código Benefício INSS</label>
+                        <div class="col-sm-8 col-xs-12 ">
+                            <div class="input-group">
+                                <input id="txtCodINSS" class="form-control" type="text" placeholder="Digite o Código INSS" />
+                                <span class="input-group-addon" id="basic-addon1">DV</span>
+                                <input id="txtCodINSS-DV" type="text" class="form-control" placeholder="Dígito Verificador" />
+                                <div class="input-group-addon"><i class="fa fa-credit-card fa-fw"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-3 col-xs-12 " for="txtLimite">Limite</label>
+                        <div class="col-sm-8 col-xs-12 ">
+                            <div class="input-group">
+                                <input id="txtLimite" class="form-control" type="text" placeholder="Limite do Proponente" />
+                                <div class="input-group-addon"><i class="fa fa-money fa-fw"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-3 col-xs-12 " for="ddlAgendamento">Agendamento</label>
+                        <div class="col-sm-8 col-xs-12 ">
+                            <div class="input-group">
+                                <select id="ddlAgendamento" class="form-control" ng-options="sno.name for sno in SN.dados track by sno.value" ng-model="venda.Agendamento">
+                                    <option value="0">Selecione...</option>
+                                </select>
+                                <div class="input-group-addon"><i class="fa fa-calendar-check-o fa-fw"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left">
+        <form class="form-group adesao">
+            <div class="form-horizontal">
+                <fieldset><h3>Beneficiários do Proponente</h3></fieldset>
+                <div ng-repeat="beneficiario in venda.beneficiarios track by $index">
+                    <div class="form-group" ">
+                        <label class="control-label col-sm-3 col-xs-12 " for="txtLimite">Beneficiário </label>
+                        <div class="col-md-4 col-xs-6">
+                            <input id="txtNomeBeneficiario" class="form-control" type="text" placeholder="Nome do Beneficiário" ng-model="beneficiario.nome" />
+                        </div>
+                        <div class="col-md-2 col-xs-3">
+                            <select id="ddlSexo" class="form-control" ng-options="sno.name for sno in beneficiarioType.dados track by sno.value" ng-model="beneficiario.tipo">
+                                <option value="0">Selecione...</option>
+                            </select>
+                        </div>
+                        <div class="col-md-1 col-xs-2">
+                            <input id="txtPorcentagem" class="form-control" type="text" placeholder="%" ng-model="beneficiario.porcentagem" maxlength="3" />
+                        </div>
+                        <div class="col-md-1 col-xs-1">
+                            <button class="btn btn-corretor btn-block btn-sm" ng-click="AddBeneficiario()"> <i class="glyphicon glyphicon-plus-sign"></i> </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left">
+        <form class="form-group adesao">
+            <fieldset><h3>Garantias do Proponente</h3></fieldset>
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <div class="row">
+                        <div class="col-md-3 col-xs-12 text-center">
+                            <button class="btn btn-corretor btn-block btn-sm"> BÁSICO </button>
+                        </div>
+                        <div class="col-md-3 col-xs-12 text-center">
+                            <button class="btn btn-corretor btn-block btn-sm"> CLÁSSICO </button>
+                        </div>
+                        <div class="col-md-3 col-xs-12 text-center">
+                            <button class="btn btn-corretor btn-block btn-sm"> MAIS </button>
+                        </div>
+                        <div class="col-md-3 col-xs-12 text-center">
+                            <button class="btn btn-corretor btn-block btn-sm"> PLENO </button>
+                        </div>
+                    </div>
+                    <hr />
+                    <table border="0" cellpadding="0" cellspacing="0" class="table planos table-hover table-striped">
+                        <thead>
+                            <tr>
+                                <th colspan="11">VIDA PREVISUL - PLANO BÁSICO</th>
+                            </tr>
+                            <tr>
+                                <th rowspan="5">IDADES</th>
+                                <th colspan="2">MQC</th>
+                                <th colspan="2">MQC</th>
+                                <th colspan="2">MQC</th>
+                                <th colspan="2">MQC</th>
+                                <th colspan="2">MQC</th>
+                            </tr>
+                            <tr>
+                                <th colspan="2">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-info btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            1.000.000,00 <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="">Action</a></li>
+                                            <li><a href="">Another action</a></li>
+                                            <li><a href="">Something else here</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="">Separated link</a></li>
+                                        </ul>
+                                    </div>
+                                </th>
+                                <th colspan="2">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-info btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            500.000,00 <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="">Action</a></li>
+                                            <li><a href="">Another action</a></li>
+                                            <li><a href="">Something else here</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="">Separated link</a></li>
+                                        </ul>
+                                    </div>
+                                </th>
+                                <th colspan="2">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-info btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            250.000,00 <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="">Action</a></li>
+                                            <li><a href="">Another action</a></li>
+                                            <li><a href="">Something else here</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="">Separated link</a></li>
+                                        </ul>
+                                    </div>
+                                </th>
+                                <th colspan="2">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-info btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            100.000,00 <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="">Action</a></li>
+                                            <li><a href="">Another action</a></li>
+                                            <li><a href="">Something else here</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="">Separated link</a></li>
+                                        </ul>
+                                    </div>
+                                </th>
+                                <th colspan="2">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-info btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            70.000,00 <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="">Action</a></li>
+                                            <li><a href="">Another action</a></li>
+                                            <li><a href="">Something else here</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="">Separated link</a></li>
+                                        </ul>
+                                    </div>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th colspan="2">SORTEIO</th>
+                                <th colspan="2">SORTEIO</th>
+                                <th colspan="2">SORTEIO</th>
+                                <th colspan="2">SORTEIO</th>
+                                <th colspan="2">SORTEIO</th>
+                            </tr>
+                            <tr>
+                                <th colspan="2">20.000,00</th>
+                                <th colspan="2">20.000,00</th>
+                                <th colspan="2">20.000,00</th>
+                                <th colspan="2">20.000,00</th>
+                                <th colspan="2">20.000,00</th>
+                            </tr>
+                            <tr>
+                                <th>HOMEM</th>
+                                <th>MULHER</th>
+                                <th>HOMEM</th>
+                                <th>MULHER</th>
+                                <th>HOMEM</th>
+                                <th>MULHER</th>
+                                <th>HOMEM</th>
+                                <th>MULHER</th>
+                                <th>HOMEM</th>
+                                <th>MULHER</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>até<br />18</td>
+                                <td>70,95</td>
+                                <td>66,36</td>
+                                <td>35,48</td>
+                                <td>33,18</td>
+                                <td>17,74</td>
+                                <td>16,59</td>
+                                <td>7,10</td>
+                                <td>6,64</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>19</td>
+                                <td>70,95</td>
+                                <td>66,36</td>
+                                <td>35,48</td>
+                                <td>33,18</td>
+                                <td>17,74</td>
+                                <td>16,59</td>
+                                <td>7,10</td>
+                                <td>6,64</td>
+                                <td>5,16</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>20</td>
+                                <td>70,95</td>
+                                <td>66,36</td>
+                                <td>35,48</td>
+                                <td>33,18</td>
+                                <td>17,74</td>
+                                <td>16,59</td>
+                                <td>7,10</td>
+                                <td>6,64</td>
+                                <td>5,16</td>
+                                <td>5,01</td>
+                            </tr>
+                            <tr>
+                                <td>21</td>
+                                <td>70,95</td>
+                                <td>66,36</td>
+                                <td>35,48</td>
+                                <td>33,18</td>
+                                <td>17,74</td>
+                                <td>16,59</td>
+                                <td>7,10</td>
+                                <td>6,64</td>
+                                <td>5,16</td>
+                                <td>5,01</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table border="0" cellpadding="0" cellspacing="0" class="table">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Prêmio Mensal</th>
+                                <th>Morte Acidental (MA)</th>
+                                <th>IPA</th>
+                                <th>Sorteio</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="radio" /></td>
+                                <td>R$ 46,90</td>
+                                <td>R$ 70.000,00</td>
+                                <td>ATÉ R$ 70.000,00</td>
+                                <td>R$ 20.000,00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left">
+        <form class="form-group adesao">
+            <div class="form-horizontal">
+                <fieldset><h3>Dados de Cobrança</h3></fieldset>
+                <div class="row">
+                    <div class="form-group">
+                        <label class="control-label col-sm-3 col-xs-12 " for="ddlTipoCobranca">Tipo de Cobrança</label>
+                        <div class="col-sm-8 col-xs-12 ">
+                            <div class="input-group">
+                                <select id="ddlTipoCobranca" class="form-control" ng-change="tipo_cobranca(venda.tipopagamento)" ng-model="venda.tipopagamento">
+                                    <option value="1">Débito em Conta</option>
+                                    <option value="2">Cartão de Crédito</option>
+                                </select>
+                                <div class="input-group-addon"><i class="fa fa-dollar fa-fw"></i></div>
+                            </div>
+                        </div>
+                    </div>
+    
+
+                    <div id="tppagamentodebito" ng-show="IsPagDebito">
+                    <!-- Débito em conta -->
+                    <div class="form-group">
+                        <label class="control-label col-sm-3 col-xs-12 " for="ddlBanco">Banco</label>
+                        <div class="col-sm-8 col-xs-12 ">
+                            <div class="input-group">
+                                <select id="ddlBanco" class="form-control">
+                                    <option value="0">Selecione...</option>
+                                </select>
+                                <div class="input-group-addon"><i class="fa fa-bank fa-fw"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-3 col-xs-12 " for="ddlDiaDebito">Dia para o Débito (débito em 01/09/2017)</label>
+                        <div class="col-sm-8 col-xs-12 ">
+                            <div class="input-group">
+                                <select id="ddlDiaDebito" class="form-control">
+                                    <option value="0">Selecione...</option>
+                                </select>
+                                <div class="input-group-addon"><i class="fa fa-calendar fa-fw"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-3 col-xs-12 " for="txtCPFDebito">CPF Débito</label>
+                        <div class="col-sm-8 col-xs-12 ">
+                            <div class="input-group">
+                                <input id="txtCPFDebito" class="form-control" type="text" placeholder="Digite o CPF do Titular" />
+                                <div class="input-group-addon"><i class="fa fa-calendar fa-fw"></i></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    </div>
+
+                    <div id="tppagamentocredito" ng-show="IsPagCredito">
+                        <!-- Cartão de crédito -->
+                        <div class="form-group">
+                            <label class="control-label col-sm-3 col-xs-12 ">Bandeira do Cartão</label>
+
+                            <div class="col-sm-8 col-xs-12 ">
+                                <div class="row cartao">
+                                    <div class="col-md-4 col-xs-12 text-center">
+                                        <input id="rdbVisa" name="rblCartao" class="" type="radio" /> <label for="rdbVisa"><img ng-src="images/logoVisa.png" border="0" /></label>
+                                    </div>
+                                    <div class="col-md-4 col-xs-12 text-center">
+                                        <input id="rdbMaster" name="rblCartao" class="" type="radio" /> <label for="rdbMaster"><img ng-src="images/logoMaster.png" border="0" /></label>
+                                    </div>
+                                    <div class="col-md-4 col-xs-12 text-center">
+                                        <input id="rdbHiper" name="rblCartao" class="" type="radio" /> <label for="rdbHiper"><img ng-src="images/logoHiper.png" border="0" /></label>
+                                    </div>
+                                    <div class="col-md-4 col-xs-12 text-center">
+                                        <input id="rdbDiners" name="rblCartao" class="" type="radio" /> <label for="rdbDiners"><img ng-src="images/logoDiners.png" border="0" /></label>
+                                    </div>
+                                    <div class="col-md-4 col-xs-12 text-center">
+                                        <input id="rdbElo" name="rblCartao" class="" type="radio" /> <label for="rdbElo"><img ng-src="images/logoElo.png" border="0" /></label>
+                                    </div>
+                                    <div class="col-md-4 col-xs-12 text-center">
+                                        <input id="rdbJCB" name="rblCartao" class="" type="radio" /> <label for="rdbJCB"><img ng-src="images/logoJCB.png" border="0" /></label>
+                                    </div>
+                                    <div class="col-md-12 col-xs-12 text-center">
+                                        <input id="rdbDiscover" name="rblCartao" class="" type="radio" /> <label for="rdbDiscover"><img ng-src="images/logoDiscover.png" border="0" /></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-3 col-xs-12 " for="txtNumeroCartao">Número do Cartão</label>
+                            <div class="col-sm-8 col-xs-12 ">
+                                <div class="input-group">
+                                    <input id="txtNumeroCartao" class="form-control" type="text" />
+                                    <div class="input-group-addon"><i class="fa fa-credit-card fa-fw"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-3 col-xs-12 " for="txtNumeroCartao">Validade</label>
+                            <div class="col-sm-8 col-xs-12 ">
+                                <div class="input-group">
+                                    <div class="input-group-addon"><label class="control-label col-sm-3 col-xs-12 " for="ddlValidadeMes">(Mês)</label></div>
+                                    <select id="ddlValidadeMes" class="form-control" ng-options="sno.text for sno in mescard.dados track by sno.value" ng-model="venda.ccmm">
+                                        <option value="0">Selecione...</option>
+                                    </select>
+                                    <div class="input-group-addon"><label class="control-label col-sm-3 col-xs-12 " for="ddlValidadeAno">(Ano)</label></div>
+                                    <select id="ddlValidadeAno" class="form-control" ng-options="sno.name for sno in anocard.dados track by sno.value" ng-model="venda.ccaa">
+                                        <option value="0">Selecione...</option>
+                                    </select>
+                                    <div class="input-group-addon"><i class="fa fa-calendar fa-fw"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+</div>

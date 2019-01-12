@@ -1,0 +1,36 @@
+﻿<form class="login-box col-lg-6 col-lg-push-3 col-md-6 col-md-push-3 col-sm-9 col-sm-push-2 col-xs-10 col-xs-push-1">
+    <div class="text-center img-header">
+        <img ng-src="images/logoSegurado.png" alt="" />
+    </div>
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titulo-login">
+            <strong class="titulo">INSIRA SEUS DADOS PARA ACESSAR O SISTEMA</strong>
+            <br />
+            <small class="subtitulo">Para entrar, digite seu e-mail e senha:</small>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="row">
+            <div class="col-md-9 col-xs-12">
+                <input id="txtLogin" class="form-control txt-login" name="txtLogin" placeholder="E-MAIL" type="text" ng-model="usuario.login" />
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="row">
+            <div class="col-md-9 col-xs-12">
+                <input id="txtSenha" class="form-control txt-login" name="txtSenha" placeholder="SENHA" type="password" ng-model="usuario.senha" />
+            </div>
+            <div class="col-md-3 col-xs-12">
+                <button class="btn btn-corretor btn-block btn-sm" ng-click="submit()"> ENTRAR <i class="glyphicon glyphicon-chevron-right"></i> </button>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-left esqueceu-senha">
+                <a href="" ng-click="esqueciSenha()">Esqueceu a senha? Clique aqui</a>
+            </div>
+        </div>
+    </div>
+</form>
